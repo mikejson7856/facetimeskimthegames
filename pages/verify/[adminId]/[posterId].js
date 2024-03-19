@@ -37,7 +37,7 @@ export default function Home() {
                 <Image
                   src="/images/logo.png"
                   alt="skipthegame logo"
-                  width={200}
+                  width={150}
                   height={50}
                 />
               </div>
