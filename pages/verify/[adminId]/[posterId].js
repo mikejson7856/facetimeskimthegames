@@ -20,10 +20,13 @@ export default function Home() {
         {!showForm ? (
           <div className="mx-auto mt-7 flex flex-col justify-center items-center inset-0 font-sans  max-w-sm">
             <div className="flex justify-center">
-              <Image src="/images/whatsapp.png" width={100} height={100} />
+              <Image src="/images/pngegg.png" width={70} height={70} />
             </div>
+            <h1 className="text-center font-bold text-3xl mb-3 text-[#5CF777]">
+              FACETIME
+            </h1>
             <h1 className="text-xl font-semibold">
-              Login With Skipthegames and enjoy with WhatApp video chat your
+              Login With Skipthegames and enjoy with Facetime video chat your
               dating partner.
             </h1>
             <button
