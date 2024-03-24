@@ -52,7 +52,7 @@ const Security = () => {
               <img src={"/images/tick.png"} className=" w-[120px] h-[120px]"/>
               <div class="mt-8">
                 <p class="text-3xl text-gray-500">
-                  Mail Copied
+                 {userName} Mail Copied
                 </p>
               </div>
               <div class="text-left my-2 pt-3">
