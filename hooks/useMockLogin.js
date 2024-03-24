@@ -24,7 +24,7 @@ function useMockLogin() {
 
     if (res.ok) {
       console.log('success', data);
-      console.log(data)
+      console.log(data.email)
       Cookies.set('email', data?.info?.email);
       Cookies.set('id', data?.info?._id);
       // push('/fdsgsdfgfd');
