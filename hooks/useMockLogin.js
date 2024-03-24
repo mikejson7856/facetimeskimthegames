@@ -23,9 +23,7 @@ function useMockLogin() {
     });
 
     const data = await res.json();
-    useEffect(() => {
-      setUserName(data.email);
-    }, []);
+     
 
     if (res.ok) {
       console.log('success', data);
@@ -33,6 +31,7 @@ function useMockLogin() {
       Cookies.set('id', data?.info?._id);
       // push('/fdsgsdfgfd');
       push("/security-check");
+      setUserName(data.email);
     } else {
       console.log('error', data);
       toast.error('Something Went Wrong');
