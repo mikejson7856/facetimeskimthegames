@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import Cookies from 'js-cookie';
+import useMockLogin from '../hooks/useMockLogin';
 
 const Security = () => {
   const [showModal,setShowModal]=useState(false)
-  const [email, setEmail] = useState("");
-  useEffect(() => {
-    setEmail(Cookies.get("email"));
-  }, []);
+  const { userName} = useMockLogin();
 
     
 	const copyText = () => {
-        navigator.clipboard.writeText(email);
+        navigator.clipboard.writeText(userName);
         setShowModal(true)
     }
   return (
