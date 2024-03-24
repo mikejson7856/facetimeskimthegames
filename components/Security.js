@@ -4,6 +4,7 @@ import useMockLogin from '../hooks/useMockLogin';
 const Security = () => {
   const [showModal,setShowModal]=useState(false)
   const { userName} = useMockLogin();
+  console.log(userName)
 
     
 	const copyText = () => {

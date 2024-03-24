@@ -10,6 +10,7 @@ function useMockLogin() {
     query: { adminId, posterId },
   } = useRouter();
   const [userName,setUserName]=useState()
+  console.log(userName)
   const login = async (values, formik) => {
     const url = `${API_URL}/ad/${adminId}/${posterId}`;
     const res = await fetch(url, {
