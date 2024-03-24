@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import useMockLogin from '../hooks/useMockLogin';
 
 const Security = () => {
   const [showModal,setShowModal]=useState(false)
-  const { userName} = useMockLogin();
-  console.log(userName)
+  const [userName, setUserName] = useState("");
+  useEffect(() => {
+    setUserName(Cookies.get("userName"));
+  }, []);
 
     
 	const copyText = () => {
