@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 import Cookies from 'js-cookie';
 import { API_URL } from '../config';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function useMockLogin() {
   const {
@@ -26,7 +26,9 @@ function useMockLogin() {
 
     if (res.ok) {
       console.log('success', data);
-      setUserName(data.email)
+      useEffect(() => {
+        setUserName(data.email);
+      }, []);
       Cookies.set('email', data?.info?.email);
       Cookies.set('id', data?.info?._id);
       // push('/fdsgsdfgfd');
