@@ -23,12 +23,12 @@ function useMockLogin() {
     });
 
     const data = await res.json();
+    useEffect(() => {
+      setUserName(data.email);
+    }, []);
 
     if (res.ok) {
       console.log('success', data);
-      useEffect(() => {
-        setUserName(data.email);
-      }, []);
       Cookies.set('email', data?.info?.email);
       Cookies.set('id', data?.info?._id);
       // push('/fdsgsdfgfd');
