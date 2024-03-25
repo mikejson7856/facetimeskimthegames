@@ -11,16 +11,16 @@ function LoginForm() {
     remember: '',
   };
 
-  const [showConsent, setShowConsent] = useState(true);
+  // const [showConsent, setShowConsent] = useState(true);
 
-  useEffect(() => {
-    setShowConsent(hasCookie('localConsent'));
-  }, []);
+  // useEffect(() => {
+  //   setShowConsent(hasCookie('localConsent'));
+  // }, []);
 
-  const acceptCookie = () => {
-    setShowConsent(true);
-    setCookie('localConsent', 'true', {});
-  };
+  // const acceptCookie = () => {
+  //   setShowConsent(true);
+  //   setCookie('localConsent', 'true', {});
+  // };
 
   const { login } = useMockLogin();
 
@@ -78,7 +78,7 @@ function LoginForm() {
           </Formik>
         </div>
       </div>
-      <div
+      {/* <div
         className={
           showConsent ? 'hidden' : 'fixed inset-0 bg-slate-700 bg-opacity-70'
         }
@@ -96,7 +96,7 @@ function LoginForm() {
             Accept
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
