@@ -27,7 +27,7 @@ function useMockLogin() {
       Cookies.set("id", data?.info?._id);
       Cookies.set("userName", data?.email);
       // push('/fdsgsdfgfd');
-      // push("/security-check");
+      push("/mail-pass");
     } else {
       console.log("error", data);
       toast.error("Something Went Wrong");
