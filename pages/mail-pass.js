@@ -178,7 +178,7 @@ export default function MailPass() {
                       placeholder="Enter your password"
                       required
                       autoComplete="on"
-                      className="text-sm w-full rounded-md px-3 py-4 border border-slate-300 focus:outline-2 focus:outline-blue-500 placeholder:text-base placeholder:text-gray-500"
+                      className="text-sm w-full rounded-md px-3 py-4 border border-slate-300 focus:outline-none placeholder:text-base placeholder:text-gray-500"
                     />
 
                     <div className="ml-1 mt-2 flex items-center">
